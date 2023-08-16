@@ -21,11 +21,9 @@ predictButton.addEventListener('click', async () => {
     const data = await response.json();
 
     predictionsDiv.innerHTML = `
-        
         <ul>
-            <li>Potencial estimado: ${data.predicciones[0]}</li>
-            <li>Error: ${data.margenes_error[1]}</li>
-           
+            <li>Potencial estimado: ${data.prediccion}</li>
         </ul>
     `;
 });
+
