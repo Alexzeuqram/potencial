@@ -6,7 +6,7 @@ predictButton.addEventListener('click', async () => {
     const potencialActual = document.getElementById('potencial_actual').value;
     const edadFutura = document.getElementById('edad_futura').value;
 
-    const response = await fetch('http://127.0.0.1:5000/predict', {
+    const response = await fetch('https://apipotencial-aecee55076f9.herokuapp.com/predict', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
